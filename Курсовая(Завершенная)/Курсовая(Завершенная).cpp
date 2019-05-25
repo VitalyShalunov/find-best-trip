@@ -556,14 +556,14 @@ repeat:
 		}
 	for (int i = 0; i <np; i++)
 		costpos[in][i] = 0;
-	file = fopen("costposetit.txt", "w+");
+	/*file = fopen("costposetit.txt", "w+");
 	for (int i = 0; i <= np; i++)
 	{
 		fprintf(file, "\n");
 
 		for (int j = 0; j <= np; j++)
 			fprintf(file, "%d ", costpos[i][j]);
-	}
+	}*/
 	fclose(file);
 	printf("\n");
 	SetConsoleTextAttribute(hConsole, (WORD)((0) | 4));
