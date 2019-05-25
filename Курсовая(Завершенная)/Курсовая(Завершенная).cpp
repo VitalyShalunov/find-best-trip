@@ -301,14 +301,15 @@ void input(wchar_t in[30])
 	HANDLE hConsole = GetStdHandle(STD_OUTPUT_HANDLE);
 	int i, j;
 
-	memset(cost, 0, sizeof(int)*n *n);
-	memset(costf, 0, sizeof(int)*n *n);
-	memset(costpos, 0, sizeof(int)*(n + 2) *(n + 2));
+	memset(cost, 0, sizeof(int)*15 *15);
+	memset(costf, 0, sizeof(int)*15*15);
+	memset(costpos, 0, sizeof(int)*(17) *(17));
 	memset(trip, 0, sizeof(int)*40);
 	memset(trippr, 0, sizeof(int) * 40);
 	memset(tripback, 0, sizeof(int) * 40);
 	memset(posetit, 0, sizeof(int) * n);
 	mintrip = 10000;
+	koltrip = 1;
 
 	file = _wfopen(in, L"r+");
 	if (!file)
